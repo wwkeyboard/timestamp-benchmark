@@ -15,6 +15,6 @@ The pretty output will be in `./target/criterion/report/index.html`
 
 # tl;dr
 
-On a M2 Macbook Pro Instant::now() is about 1ns slower than SystemTime::now(). In most cases this isn't an issue, but in a tight enough loop every nanosecond becomes precious!
+On a M2 Macbook Pro Instant::now() is about 1ns slower than SystemTime::now(). This is about 6-7% faster, and in most cases shouldn't be an issue. However in a tight enough loop every nanosecond is precious!
 
 ![tl;dr](violin.svg)
